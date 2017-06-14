@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/14/jquery学习之常用的jquery插件1/index.html">
 <meta property="og:site_name" content="不二的程序人生">
 <meta property="og:description" content="自问自答从那可以获取jquery插件？jquery插件库 如何选择jquery插件？从2个方面  使用人数（知名度）：用的多了，bug也相对少点。 兼容性:根据项目ie版本的兼容情况  jquery的分类 jquery的插件ui类：以ui展示类为主，以提高用户体验为主。如tag标签 功能类：方便程序员编写代码,如数据校验，时间工具类等   当然分类不是重点，重点在于让我们更快更好的完成任务就就真理">
-<meta property="og:updated_time" content="2017-06-14T05:07:43.806Z">
+<meta property="og:updated_time" content="2017-06-14T05:26:12.486Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jquery学习之常用的jquery插件1">
 <meta name="twitter:description" content="自问自答从那可以获取jquery插件？jquery插件库 如何选择jquery插件？从2个方面  使用人数（知名度）：用的多了，bug也相对少点。 兼容性:根据项目ie版本的兼容情况  jquery的分类 jquery的插件ui类：以ui展示类为主，以提高用户体验为主。如tag标签 功能类：方便程序员编写代码,如数据校验，时间工具类等   当然分类不是重点，重点在于让我们更快更好的完成任务就就真理">
@@ -23,7 +23,7 @@
     <link rel="alternative" href="/atom.xml" title="不二的程序人生" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
   
   <link rel="stylesheet" type="text/css" href="/./main.b3331d.css">
   <style type="text/css">
@@ -47,7 +47,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="/my.jpg" class="js-avatar">
+			<img src="/img/my.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">不二同学</a></h1>
@@ -70,6 +70,12 @@
     			
             
     			
+            
+    			
+    			<a q-on="click: openSlider(e, 'category')" href="javascript:void(0)">分类</a>
+    			
+            
+    			
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
@@ -77,7 +83,7 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="https://github.com/zcooool" title="github"><i class="icon-github"></i></a>
 		        
 					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 		        
@@ -101,7 +107,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/my.jpg" class="js-avatar">
+				<img src="/img/my.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">不二同学</h1>
@@ -118,7 +124,7 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://github.com/zcooool" title="github"><i class="icon-github"></i></a>
 			        
 						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 			        
@@ -235,6 +241,17 @@
 	</div>
 
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/jquery学习计划/" class="article-tag-list-link color1">jquery学习计划</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -297,6 +314,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2017/06/14/jquery学习之常用的jquery插件2(fancybox,layer)/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          jquery学习之常用的jquery插件2(fancybox,layer)
+        
+      </div>
+    </a>
   
   
     <a href="/2017/06/14/css基础-1/" id="article-nav-older" class="article-nav-link-wrap">
@@ -366,6 +392,12 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
       
     
       
+    
+      
+      
+      
+    
+      
       
       
     
@@ -375,11 +407,17 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
     
     
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+        
+      
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'category')"><a href="javascript:void(0)" q-class="active:category">分类</a></li>
+      
+        
+      
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -412,7 +450,15 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">ejs</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">jquery插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">gulp</a>
               </li>
             
             <div class="clearfix"></div>
