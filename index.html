@@ -6,16 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hexo</title>
+  <title>不二的程序人生</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="不二的程序人生">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="不二的程序人生">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="不二的程序人生">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="不二的程序人生" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -45,7 +45,7 @@
 			<img src="null" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">不二的</a></h1>
+		  <h1 class="header-author"><a href="/">不二同学</a></h1>
 		</hgroup>
 		
 
@@ -99,7 +99,7 @@
 				<img src="null" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">不二的</h1>
+			  <h1 class="header-author js-header-author">不二同学</h1>
 			</hgroup>
 			
 			
@@ -146,6 +146,207 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-jquery学习之常用的jquery插件1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/14/jquery学习之常用的jquery插件1/">jquery学习之常用的jquery插件1</a>
+    </h1>
+  
+
+        
+        <a href="/2017/06/14/jquery学习之常用的jquery插件1/" class="archive-article-date">
+  	<time datetime="2017-06-14T01:49:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="自问自答"><a href="#自问自答" class="headerlink" title="自问自答"></a>自问自答</h2><h4 id="从那可以获取jquery插件？"><a href="#从那可以获取jquery插件？" class="headerlink" title="从那可以获取jquery插件？"></a>从那可以获取jquery插件？</h4><p><a href="http://www.jq22.com/" target="_blank" rel="external">jquery插件库</a></p>
+<h4 id="如何选择jquery插件？"><a href="#如何选择jquery插件？" class="headerlink" title="如何选择jquery插件？"></a>如何选择jquery插件？</h4><p>从2个方面</p>
+<ol>
+<li>使用人数（知名度）：用的多了，bug也相对少点。</li>
+<li>兼容性:根据项目ie版本的兼容情况</li>
+</ol>
+<h4 id="jquery的分类"><a href="#jquery的分类" class="headerlink" title="jquery的分类"></a>jquery的分类</h4><ol>
+<li>jquery的插件ui类：以ui展示类为主，以提高用户体验为主。如tag标签</li>
+<li>功能类：方便程序员编写代码,如数据校验，时间工具类等</li>
+</ol>
+<blockquote>
+<p>当然分类不是重点，重点在于让我们更快更好的完成任务就就真理。请相信总会有那么一个插件是你合适你的想法，如果没有，那么就自己写一个。</p>
+</blockquote>
+<h3 id="如何去写一个jquery插件？"><a href="#如何去写一个jquery插件？" class="headerlink" title="如何去写一个jquery插件？"></a>如何去写一个jquery插件？</h3><p>原则： </p>
+<ol>
+<li>不要破坏他的链调用</li>
+<li>挂载在jquery上或者jquery对象上</li>
+<li>暴露合适的方法供给别人扩展。</li>
+<li>合适的默认值。</li>
+</ol>
+<h3 id="let’s-go！"><a href="#let’s-go！" class="headerlink" title="let’s go！"></a>let’s go！</h3><ol>
+<li><p>使用匿名函数来不会造成全局污染</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    ...</div><div class="line">&#125;)(jQuery)</div></pre></td></tr></table></figure>
+</li>
+<li><p>挂载在jquery或者jquery对象上<br>匿名函数里面添加</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$.fn.func = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>如果一次性添加过个插件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$.fn.extend(&#123;</div><div class="line"></div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<ol>
+<li><p>合并参数</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$.extend(defaults,options);</div></pre></td></tr></table></figure>
+</li>
+<li><p>保证链调用方式</p>
+<blockquote>
+<p>注意方法中的this对象，他就只带了jquery对象，将this return回去。</p>
+</blockquote>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var $this = $(this);</div></pre></td></tr></table></figure>
+<h3 id="完整的案例"><a href="#完整的案例" class="headerlink" title="完整的案例"></a>完整的案例</h3><p>目标：写一个helloworld的插件。通过传递参数告诉和谁打招呼。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">(function($)&#123;</div><div class="line">		$.fn.hello = function(opt)&#123;</div><div class="line">		</div><div class="line">			var $this = $(this);</div><div class="line">			var defaults = &#123;msg:&apos;zcoool&apos;&#125;</div><div class="line">			$.extend(defaults,opt);</div><div class="line">			console.log($this);</div><div class="line">			$this.html(&quot;hello,&quot;+defaults.msg)</div><div class="line">			return $this;</div><div class="line">		&#125;	</div><div class="line">	&#125;)(jQuery);</div><div class="line">	</div><div class="line">$(function()&#123;</div><div class="line">	$(&quot;#div&quot;).hello().hello(&#123;msg:&apos;123&apos;&#125;)</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">jquery插件</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/06/14/jquery学习之常用的jquery插件1/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
+    <article id="post-css基础-1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/14/css基础-1/">css基础-1</a>
+    </h1>
+  
+
+        
+        <a href="/2017/06/14/css基础-1/" class="archive-article-date">
+  	<time datetime="2017-06-14T00:58:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="基础入门"><a href="#基础入门" class="headerlink" title="基础入门"></a>基础入门</h2><h3 id="如何加入到html体系中"><a href="#如何加入到html体系中" class="headerlink" title="如何加入到html体系中"></a>如何加入到html体系中</h3><h4 id="css-样式的层级以及优先性"><a href="#css-样式的层级以及优先性" class="headerlink" title="css 样式的层级以及优先性"></a>css 样式的层级以及优先性</h4><ol>
+<li>浏览器自身的标签的属性</li>
+<li>外部css样式文件</li>
+<li>head标签内style</li>
+<li>html内部写行内样式</li>
+</ol>
+<blockquote>
+<p>优先从低到高，复用性从高到低。</p>
+</blockquote>
+<h4 id="关于标签样式"><a href="#关于标签样式" class="headerlink" title="关于标签样式"></a>关于标签样式</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">//html标签自身的属性</div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line">//marigin:0px;padding:0px</div></pre></td></tr></table></figure>
+<blockquote>
+<p>因为不同游览器的内置html标签属性是不一样 的。所以一般我们在写css 样式框架的时候需要对其进行初始化。简单的就是html标签的内距和外距设置为0px;设置统一的字体、图片的border边距等等</p>
+</blockquote>
+<p>以下为css样式初始化<br><a href="http://www.cnblogs.com/hfzps/p/4402228.html" target="_blank" rel="external">通用css样式初始化</a><br><a href="http://nec.netease.com/framework/css-reset.html" target="_blank" rel="external">网易的css样式初始化方法</a></p>
+<h4 id="关于外部文件样式"><a href="#关于外部文件样式" class="headerlink" title="关于外部文件样式"></a>关于外部文件样式</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">''</span> <span class="attr">rel</span>=<span class="string">'stylesheet'</span> /&gt;</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>注意后面的<code>rel=&#39;stylesheet&#39;</code>不要遗漏。</p>
+</blockquote>
+<h4 id="关于head内部-lt-style-gt"><a href="#关于head内部-lt-style-gt" class="headerlink" title="关于head内部&lt;style&gt;"></a>关于head内部<code>&lt;style&gt;</code></h4><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line">        .white-bg&#123;</div><div class="line">            backgound-color:#fff</div><div class="line">        &#125;</div><div class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div></pre></td></tr></table></figure>
+<h4 id="行内样式"><a href="#行内样式" class="headerlink" title="行内样式"></a>行内样式</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//隐藏div</div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">'display:none'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="css基础语法"><a href="#css基础语法" class="headerlink" title="css基础语法"></a>css基础语法</h3><p><a href="">本语法案例项目地址</a></p>
+<h4 id="css"><a href="#css" class="headerlink" title="css"></a>css</h4>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端学习计划之css基础篇/" class="article-tag-list-link color4">前端学习计划之css基础篇</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/06/14/css基础-1/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
   
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -213,7 +414,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2017 不二的
+    		&copy; 2017 不二同学
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -285,6 +486,22 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">前端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">jquery插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">基础</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">css</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
