@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/14/css基础-1/index.html">
 <meta property="og:site_name" content="不二的程序人生">
 <meta property="og:description" content="一点一点学习">
-<meta property="og:updated_time" content="2017-06-15T03:20:52.902Z">
+<meta property="og:updated_time" content="2017-06-15T03:51:30.904Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css基础-1">
 <meta name="twitter:description" content="一点一点学习">
@@ -252,6 +252,37 @@
 <p>排列方式将其转化成li的方式<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">			</div><div class="line">			<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"display: list-item;"</span>&gt;</span></div><div class="line">				<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"display: inline;"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">				<span class="tag">&lt;<span class="name">span</span>&gt;</span>测试1<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">			<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"display: list-item;"</span>&gt;</span></div><div class="line">				<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"display: inline;"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">				<span class="tag">&lt;<span class="name">span</span>&gt;</span>测试1<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">			<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"display: list-item;"</span>&gt;</span></div><div class="line">				<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"display: inline;"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">				<span class="tag">&lt;<span class="name">span</span>&gt;</span>测试1<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">			<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"display: list-item;"</span>&gt;</span></div><div class="line">				<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"display: inline;"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">				<span class="tag">&lt;<span class="name">span</span>&gt;</span>测试1<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">			<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure></p>
 </blockquote>
 <h4 id="inherit"><a href="#inherit" class="headerlink" title="inherit"></a>inherit</h4><p>继承与父类</p>
+<hr>
+<h3 id="居中的方式"><a href="#居中的方式" class="headerlink" title="居中的方式"></a>居中的方式</h3><p>案例1：文字的居中</p>
+<div style="width: 100px;height:100px;text-align: center;border: 1px solid #000000;"><br>            123<br></div>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--文字的居中--&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">'width: 100px;height:100px;text-align: center;border: 1px solid #000000;'</span>&gt;</span></div><div class="line">			123</div><div class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>案例2：div水平居中</p>
+<div style="width: 100px;height:100px;text-align: center;border: 1px solid #000000;"><br>            <div style="margin: auto auto;border: 1px solid #000000; height: 50px;width: 50%;"></div><br>        </div>
+
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">'width: 100px;height:100px;text-align: center;border: 1px solid #000000;'</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"margin: auto auto;border: 1px solid #000000; height: 50px;width: 50%;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>设置在父div的<code>text-align: center</code></p>
+</blockquote>
+<p>案例3：div垂直居中</p>
+<blockquote>
+<p>结合内部div的高度，计算margin-top的值</p>
+<div style="width: 100px;height:100px;text-align: center;border: 1px solid #000000;"><br>            <div style="margin: auto auto;border: 1px solid #000000; height: 50px;width: 50%;margin-top: 25px;"></div><br>        </div>
+
+
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">'width: 100px;height:100px;text-align: center;border: 1px solid #000000;'</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"margin: auto auto;border: 1px solid #000000; height: 50px;width: 50%;margin-top: 25px;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>当然这种方式其实基本都是在父div的高度固定的情况下决定的，不然因为父div的高度导致样式真的很丑<br>在不知道父亲高度的下，使用padding把上下对齐。<br>高度设置成100%。这样就ok了</p>
+</blockquote>
+<p>案例3：关于文本内容的垂直居中</p>
+<blockquote>
+<p>“inline-block依赖型元素”，也就是说只有一个元素属于inline或是inline-block（table-cell也可以理解为inline-block水平）水平，其身上的vertical-align属性才会起作用。<br>对于inline而言，需要设置inline-height，同时<br>他的父元素的高度需要自动扩展。或者设置的高度与之相同。</p>
+</blockquote>
+<div style="height: 100px;border: 1px solid #000000;text-align:center"><br>        <div style="display: inline;vertical-align: middle;line-height: 100px;border: 1px solid #000000;"><br>            123<br>        </div><br>        </div>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height: 100px;"</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"display: inline;vertical-align: middle;line-height: 100px;border: 1px solid #000000;"</span>&gt;</span></div><div class="line">			123</div><div class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
 
       
 
@@ -498,15 +529,15 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">ejs</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">基础</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">css</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">ejs</a>
               </li>
              
               <li class="article-tag-list-item">
