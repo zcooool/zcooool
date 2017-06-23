@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>jquery学习之常用的jquery插件2(fancybox,layer) | 不二的程序人生</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="fancybox 作用：图片层,div,iframe的弹出层(国外的)  资源：  官方网站 用法总结  layer 作用:可以用来做弹出层。（国内）  资源 layer官方 layer的api">
+  <meta name="description" content="fancybox 作用：图片层,div,iframe的弹出层(国外的)  资源：  官方网站 用法总结  如何使用？ 引入jquery 引入插件 （可选）引入滚轮控制 引入css样式 调用fancybox（）jquery对象方法实现初始化。  layer 作用:可以用来做弹出层。（国内）  资源 layer官方 layer的api">
 <meta name="keywords" content="前端,jquery插件">
 <meta property="og:type" content="article">
 <meta property="og:title" content="jquery学习之常用的jquery插件2(fancybox,layer)">
 <meta property="og:url" content="http://yoursite.com/2017/06/14/jquery学习之常用的jquery插件2(fancybox,layer)/index.html">
 <meta property="og:site_name" content="不二的程序人生">
-<meta property="og:description" content="fancybox 作用：图片层,div,iframe的弹出层(国外的)  资源：  官方网站 用法总结  layer 作用:可以用来做弹出层。（国内）  资源 layer官方 layer的api">
-<meta property="og:updated_time" content="2017-06-14T06:26:50.120Z">
+<meta property="og:description" content="fancybox 作用：图片层,div,iframe的弹出层(国外的)  资源：  官方网站 用法总结  如何使用？ 引入jquery 引入插件 （可选）引入滚轮控制 引入css样式 调用fancybox（）jquery对象方法实现初始化。  layer 作用:可以用来做弹出层。（国内）  资源 layer官方 layer的api">
+<meta property="og:updated_time" content="2017-06-15T10:53:52.345Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jquery学习之常用的jquery插件2(fancybox,layer)">
-<meta name="twitter:description" content="fancybox 作用：图片层,div,iframe的弹出层(国外的)  资源：  官方网站 用法总结  layer 作用:可以用来做弹出层。（国内）  资源 layer官方 layer的api">
+<meta name="twitter:description" content="fancybox 作用：图片层,div,iframe的弹出层(国外的)  资源：  官方网站 用法总结  如何使用？ 引入jquery 引入插件 （可选）引入滚轮控制 引入css样式 调用fancybox（）jquery对象方法实现初始化。  layer 作用:可以用来做弹出层。（国内）  资源 layer官方 layer的api">
   
     <link rel="alternative" href="/atom.xml" title="不二的程序人生" type="application/atom+xml">
   
@@ -67,10 +67,6 @@
     		
     			
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
-    			
-            
-    			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
     			
             
     			
@@ -181,6 +177,13 @@
 <ol>
 <li><a href="http://fancybox.net/" target="_blank" rel="external">官方网站</a></li>
 <li><a href="http://blog.csdn.net/china_skag/article/details/23882281" target="_blank" rel="external">用法总结</a></li>
+</ol>
+<h4 id="如何使用？"><a href="#如何使用？" class="headerlink" title="如何使用？"></a>如何使用？</h4><ol>
+<li>引入jquery</li>
+<li>引入插件</li>
+<li>（可选）引入滚轮控制</li>
+<li>引入css样式</li>
+<li>调用fancybox（）jquery对象方法实现初始化。</li>
 </ol>
 <h3 id="layer"><a href="#layer" class="headerlink" title="layer"></a>layer</h3><blockquote>
 <p>作用:可以用来做弹出层。（国内）</p>
@@ -388,25 +391,17 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
       
       
     
-      
-      
-      
-    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
-        
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -431,6 +426,10 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">ejs</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">基础</a>
               </li>
              
@@ -439,7 +438,7 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">ejs</a>
+                <a href="javascript:void(0)" class="js-tag color5">gulp</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -447,7 +446,7 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">gulp</a>
+                <a href="javascript:void(0)" class="js-tag color2">kotlin</a>
               </li>
             
             <div class="clearfix"></div>
@@ -493,38 +492,6 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
     	</section>
     
 
-    
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
     
 
     
